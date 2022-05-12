@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+      release: v2
+  template:
+    metadata:
+      labels:
+        app: frontend
+        release: v2
+    spec:
+      containers:
+      - image: gcr.io/google-samples/hello-app:2.0
+        imagePullPolicy: IfNotPresent
+        name: frontend-app
+        ports:
+        - containerPort: 80
+          protocol: TCP
+        resources: 
+          limits:
+            cpu: 10m
+            memory: 30Mi
+          requests:
+            cpu: 10m
+            memory: 30Mi  
