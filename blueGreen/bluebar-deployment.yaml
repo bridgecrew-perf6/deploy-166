@@ -15,7 +15,7 @@ spec:
         release: v2
     spec:
       containers:
-      - image: gcr.io/google-samples/hello-app:2.0
+      - image: lxqhim/smart-bank-frontend:blue
         imagePullPolicy: IfNotPresent
         name: frontend-app
         ports:
