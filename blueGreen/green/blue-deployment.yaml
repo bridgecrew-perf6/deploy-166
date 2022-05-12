@@ -15,7 +15,7 @@ spec:
         release: v1
     spec:
       containers:
-      - image: gcr.io/google-samples/hello-app:1.0
+      - image: zfireear/frontend:v9
         imagePullPolicy: IfNotPresent
         name: frontend-app
         ports:
