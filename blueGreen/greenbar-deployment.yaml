@@ -15,7 +15,7 @@ spec:
         release: v1
     spec:
       containers:
-      - image: abhay1813/finalfrontend
+      - image: zfireear/frontend-bg:v1
         imagePullPolicy: IfNotPresent
         name: frontend-app
         ports:
