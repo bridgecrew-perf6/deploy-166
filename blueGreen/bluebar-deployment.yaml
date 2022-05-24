@@ -15,7 +15,7 @@ spec:
         release: v2
     spec:
       containers:
-      - image: lxqhim/smart-bank-frontend:blue
+      - image: zfireear/frontend-bg:v2
         imagePullPolicy: IfNotPresent
         name: frontend-app
         ports:
